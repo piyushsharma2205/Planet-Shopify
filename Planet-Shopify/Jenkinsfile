@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t planet-shopify .'
+            }
+        }
+
+        stage('Deploy Container') {
+            steps {
+                sh '''
+                docker stop planet-shopify || true
+                docker rm planet-shopify || true
+                docker run -d --name planet-shopify -p 8080:80 planet-shopify
+                '''
+            }
+        }
+    }
+}
