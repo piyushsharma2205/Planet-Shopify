@@ -24,6 +24,10 @@ session_start();
 
 <body style="margin-bottom:200px">
 
+ <h2 style="text-align:center;color:red;">
+CI/CD Pipeline Working Successfully 🚀
+</h2>
+  
 <!-- Header -->
 <?php
 include 'includes/header_menu.php';
