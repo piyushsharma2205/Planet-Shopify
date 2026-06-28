@@ -2,9 +2,14 @@ pipeline {
     agent any
 
     stages {
+
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t planet-shopify .'
+                sh '''
+                docker build -t planet-shopify \
+                -f Planet-Shopify/Dockerfile \
+                Planet-Shopify
+                '''
             }
         }
 
@@ -13,7 +18,11 @@ pipeline {
                 sh '''
                 docker stop planet-shopify || true
                 docker rm planet-shopify || true
-                docker run -d --name planet-shopify -p 8080:80 planet-shopify
+
+                docker run -d \
+                  --name planet-shopify \
+                  -p 8080:80 \
+                  planet-shopify
                 '''
             }
         }
