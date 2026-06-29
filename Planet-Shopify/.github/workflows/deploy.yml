@@ -1,0 +1,35 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/Planet-Shopify/Planet-Shopify
+            git pull origin main
+
+            docker stop planet-shopify || true
+            docker rm planet-shopify || true
+
+            docker build -t planet-shopify .
+
+            docker run -d \
+              --name planet-shopify \
+              -p 8080:80 \
+              --restart unless-stopped \
+              planet-shopify
