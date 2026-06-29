@@ -52,3 +52,4 @@ The _Planet Shopify_ is a eCommerce website. Developed using php in backend and 
 17 -The website is fully functional and working with database.
 
 CI/CD Pipeline test - 29 june 2026
+CI/CD Auto Build Test
