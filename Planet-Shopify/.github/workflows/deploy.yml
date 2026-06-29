@@ -1,4 +1,4 @@
-name: Deploy to EC2
+name: Deploy Planet Shopify to EC2
 
 on:
   push:
@@ -20,7 +20,8 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~/Planet-Shopify/Planet-Shopify
+            cd ~/Planet-shopify/Planet-Shopify
+
             git pull origin main
 
             docker stop planet-shopify || true
@@ -31,5 +32,9 @@ jobs:
             docker run -d \
               --name planet-shopify \
               -p 8080:80 \
+              --restart always \
+              planet-shopify
+
+            echo "✅ Deployment Successful!"
               --restart unless-stopped \
               planet-shopify
