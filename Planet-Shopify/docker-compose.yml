@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  planet-shopify:
+    build: .
+    container_name: planet-shopify
+    ports:
+      - "8080:80"
+    restart: unless-stopped
