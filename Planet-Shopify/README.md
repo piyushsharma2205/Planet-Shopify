@@ -51,3 +51,4 @@ The _Planet Shopify_ is a eCommerce website. Developed using php in backend and 
 16 -Under the section 'Your VirtualHost' click on "PlanetShopify".\
 17 -The website is fully functional and working with database.
 
+CI/CD Pipeline test - 29 june 2026
