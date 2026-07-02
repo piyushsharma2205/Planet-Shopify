@@ -1,55 +1,140 @@
-# Ecommerce-Website
+# 🚀 Planet Shopify - End-to-End DevOps Project
 
-The _Planet Shopify_ is a eCommerce website. Developed using php in backend and mysql database and used html and bootstrap in frontend.
+## 📌 Project Overview
+
+Planet Shopify is a PHP-based E-commerce application deployed on AWS using modern DevOps practices.
+
+This project demonstrates an end-to-end CI/CD pipeline, containerization, automated deployment, and monitoring using industry-standard DevOps tools.
+
+---
+
+# 🛠 Tech Stack
+
+- AWS EC2
+- Ubuntu Linux
+- Git
+- GitHub
+- GitHub Actions
+- Jenkins
+- Docker
+- Docker Compose
+- PHP
+- MySQL
+- Apache
+- Prometheus
+- Grafana
+- Node Exporter
+- cAdvisor
+
+---
+
+# 📂 Project Architecture
+
+Developer
+↓
+GitHub Repository
+↓
+GitHub Actions
+↓
+Jenkins CI/CD
+↓
+Docker Image Build
+↓
+Docker Compose Deployment
+↓
+AWS EC2 Server
+├── Planet Shopify Website
+├── Prometheus
+├── Grafana
+├── Node Exporter
+└── cAdvisor
+
+---
+
+# ⚙️ CI/CD Workflow
+
+1. Developer pushes code to GitHub.
+2. GitHub Actions triggers the workflow.
+3. Jenkins pulls the latest code.
+4. Docker builds the application image.
+5. Docker Compose deploys the updated containers.
+6. Website is automatically updated on AWS EC2.
+
+---
+
+# 📊 Monitoring
+
+The project includes complete monitoring using:
+
+- Prometheus
+- Grafana
+- Node Exporter
+- cAdvisor
+
+These tools monitor:
+
+- CPU Usage
+- Memory Usage
+- Disk Usage
+- Network Usage
+- Docker Containers
+- Server Health
+
+---
+
+# 🐳 Docker Containers
+
+- Planet Shopify
+- Prometheus
+- Grafana
+- Node Exporter
+- cAdvisor
+
+---
+
+# 📸 Screenshots
+
+Coming Soon
+
+- Website
+- Jenkins Pipeline
+- GitHub Actions
+- Prometheus
+- Grafana Dashboard
+- Docker Containers
+
+---
+
+# 🚀 Features
+
+✅ Automated Deployment
+
+✅ Continuous Integration
+
+✅ Continuous Delivery
+
+✅ Infrastructure Monitoring
+
+✅ Docker Containerization
+
+✅ AWS Cloud Deployment
+
+---
+
+# 📈 Future Improvements
+
+- Kubernetes Deployment
+- Terraform Infrastructure
+- Ansible Automation
+- Nginx Reverse Proxy
+- SSL with Let's Encrypt
+- Centralized Logging (ELK)
+
+---
+
+# 👨‍💻 Author
+
+**Piyush Sharma**
 
 
-## Technologies
-
-- [PHP v4.9.7](https://www.php.net/docs.php)
-- [Bootstrap](https://getbootstrap.com)
-- [MySQL](https://www.mysql.com)
-- [HTML](https://www.w3schools.com/html/default.asp)
-- [CSS](https://www.w3schools.com/css/default.asp)
-
-## [view screenshots](https://github.com/ankurprasad1/project/tree/main/planetshopify%20screenshots)
-
-![index](https://github.com/ankurprasad1/project/blob/68f746519b99b41009f5dc34c56d9c6d245ebe03/productgif.gif)
-
-
-![Home Page](https://github.com/ankurprasad1/project/blob/e23ff4c96adcbbd320e329818dfcf8345f8a6122/planetshopify%20screenshots/home.png)
-![About us](https://github.com/ankurprasad1/project/blob/e23ff4c96adcbbd320e329818dfcf8345f8a6122/planetshopify%20screenshots/about%20us.png)
-![Products](https://github.com/ankurprasad1/project/blob/e23ff4c96adcbbd320e329818dfcf8345f8a6122/planetshopify%20screenshots/product.png)
-![Offers](https://github.com/ankurprasad1/project/blob/e23ff4c96adcbbd320e329818dfcf8345f8a6122/planetshopify%20screenshots/offers.png)
-![Sign Up](https://github.com/ankurprasad1/project/blob/e23ff4c96adcbbd320e329818dfcf8345f8a6122/planetshopify%20screenshots/sign%20in.png)
-![Login](https://github.com/ankurprasad1/project/blob/e23ff4c96adcbbd320e329818dfcf8345f8a6122/planetshopify%20screenshots/login.png)
-![Cart](https://github.com/ankurprasad1/project/blob/e23ff4c96adcbbd320e329818dfcf8345f8a6122/planetshopify%20screenshots/cart.png)
-![Confirm](https://github.com/ankurprasad1/project/blob/874137744a19718fb7e2a1def860e368cb0c8b28/planetshopify%20screenshots/confirm.png)
-
-## Software Needed to Run Project
-
-[1 -Web browser Google chrome, Mozilla Firefox](https://www.google.com/intl/en_in/chrome/)\
-[2 -Wamp Server3 v.3.0.0](https://sourceforge.net/projects/wampserver/)\
-[3 -Install all the Required Software and Run it]()
-
-## Set Up Instructions For Running Website
-
-1 -Getting Started\
-2 -Download or Clone the repository in your desktop/laptop using commands in Code option and exract the code in normal folder(if in zip).\
-3 -Copy/move the folder in the Wamp64 folder in C drive i.e. " C:\wamp64\www ".\
-4 -Run WampServer and wait till the server  turns Green in the taskbar.\
-5 -Open Google chrome and type localhost in the url in top most.\
-6 -In the bottom Left Corner click on 'Add Virtual host'. \
-7 -Type the name of the project of your choice ex. "PlanetShopify".\
-8 -Copy the location of the file "C:\wamp64\www\Planet shopify".\
-9 -Click on 'Start the creation of VirtualHost' .\
-10 -Now restart the wamp server by Right click on the wamp server icon in the taskbar.\
-11 -Close/refresh the localhost webpage.\
-12 -In new tab type "http://localhost/phpmyadmin4.9.7/" (here used)\
-13 -Type user ="root" & password = .\
-14 -In 'New' Create a database with a name "ecommerce" and click 'create'.\
-15 -Now in top menu bar click on "import" & import the file in the folder name "ecommerce.sql" and click on 'GO' in bottom left side.\
-16 -Under the section 'Your VirtualHost' click on "PlanetShopify".\
-17 -The website is fully functional and working with database.
-
-CI/CD Pipeline test - 29 june 2026
-CI/CD Auto Build Test
+MCA Graduate | DevOps Engineer | AWS | Docker | Jenkins | Grafana | Prometheus
