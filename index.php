@@ -25,7 +25,7 @@ session_start();
 <body style="margin-bottom:200px">
 
  <h2 style="text-align:center;color:red;">
-CI/CD Pipeline Working Successfully 🚀
+CI/CD Pipeline Working Successfully 🚀 Version 2
 </h2>
   
 <!-- Header -->
