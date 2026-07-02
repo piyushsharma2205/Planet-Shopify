@@ -20,7 +20,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~/Planet-shopify/Planet-Shopify
+            cd ~/Planet-shopify
             git pull origin main
             docker-compose down
             docker-compose up -d --build
