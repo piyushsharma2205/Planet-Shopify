@@ -1,0 +1,6 @@
+.terraform/
+**/.terraform/
+*.tfstate
+*.tfstate.*
+terraform_*.zip
+LICENSE.txt
