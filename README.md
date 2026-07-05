@@ -153,3 +153,19 @@ Planet-Shopify/
 
 ### Prometheus
 ![Prometheus](Prometheus.png)
+
+## 🚀 Deployment
+
+1. Clone the repository
+2. Configure AWS EC2 instance
+3. Install Docker & Docker Compose
+4. Configure Nginx Reverse Proxy
+5. Run the application
+
+```bash
+docker compose up -d
+```
+
+Access the application:
+
+https://piyushdev.xyz
