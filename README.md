@@ -78,3 +78,21 @@ MCA | DevOps Engineer (Fresher)
 
 GitHub:
 https://github.com/piyushsharma2205
+
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Cloud | AWS EC2 |
+| Operating System | Ubuntu 24.04 LTS |
+| Containerization | Docker, Docker Compose |
+| CI/CD | GitHub Actions, Jenkins |
+| Configuration Management | Ansible |
+| Infrastructure as Code | Terraform |
+| Reverse Proxy | Nginx |
+| Monitoring | Prometheus, Grafana |
+| Metrics | Node Exporter, cAdvisor |
+| Language | PHP |
+| Database | MySQL |
+| Version Control | Git & GitHub |
