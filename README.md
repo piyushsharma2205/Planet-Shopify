@@ -102,3 +102,37 @@ https://github.com/piyushsharma2205
 This project uses a production-style DevOps architecture with Infrastructure as Code, CI/CD, automated deployment, monitoring, and reverse proxy.
 
 ![Planet Shopify Architecture](diagrams/architecture-diagram.png)
+
+## 📂 Project Structure
+
+```
+Planet-Shopify/
+│
+├── .github/workflows/
+├── ansible/
+├── terraform/
+├── diagrams/
+├── images/
+├── includes/
+├── Dockerfile
+├── docker-compose.yml
+├── Jenkinsfile
+├── README.md
+└── LICENSE.txt
+```
+
+## ✨ Key Features
+
+- 🚀 End-to-End DevOps Project
+- ☁️ AWS EC2 Deployment
+- 🐳 Docker & Docker Compose
+- ⚙️ GitHub Actions CI
+- 🔧 Jenkins Continuous Deployment
+- 🏗️ Terraform Infrastructure as Code
+- 🤖 Ansible Automated Deployment
+- 🌐 Nginx Reverse Proxy
+- 🔒 HTTPS with Custom Domain
+- 📊 Prometheus Monitoring
+- 📈 Grafana Dashboards
+- 💻 Node Exporter
+- 📦 cAdvisor Container Monitoring
