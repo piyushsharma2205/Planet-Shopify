@@ -136,3 +136,20 @@ Planet-Shopify/
 - 📈 Grafana Dashboards
 - 💻 Node Exporter
 - 📦 cAdvisor Container Monitoring
+
+  ## 📸 Project Screenshots
+
+### Home Page
+![Home](screenshotswebsitehome.png)
+
+### Jenkins Pipeline
+![Jenkins](jenkinsdashboard.png)
+
+### GitHub Actions
+![GitHub Actions](screenshotsgithubactionsuccess.png)
+
+### Grafana Dashboard
+![Grafana](Grafanadashboard.png)
+
+### Prometheus
+![Prometheus](Prometheus.png)
