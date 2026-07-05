@@ -96,3 +96,9 @@ https://github.com/piyushsharma2205
 | Language | PHP |
 | Database | MySQL |
 | Version Control | Git & GitHub |
+
+## 🏗️ Project Architecture
+
+This project uses a production-style DevOps architecture with Infrastructure as Code, CI/CD, automated deployment, monitoring, and reverse proxy.
+
+![Planet Shopify Architecture](diagrams/architecture-diagram.png)
