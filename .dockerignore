@@ -1,0 +1,11 @@
+.git
+.github
+terraform
+terraform-ec2
+ansible
+screenshots
+diagrams
+README.md
+LICENSE.txt
+*.zip
+*.log
