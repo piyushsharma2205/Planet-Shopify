@@ -1,140 +1,80 @@
 # 🚀 Planet Shopify - End-to-End DevOps Project
 
-## 📌 Project Overview
+## 📌 Overview
 
-Planet Shopify is a PHP-based E-commerce application deployed on AWS using modern DevOps practices.
+Planet Shopify is a production-ready PHP e-commerce application deployed on AWS using modern DevOps practices.
 
-This project demonstrates an end-to-end CI/CD pipeline, containerization, automated deployment, and monitoring using industry-standard DevOps tools.
+This project demonstrates Infrastructure as Code, CI/CD automation, Configuration Management, Containerization, Reverse Proxy, HTTPS, Monitoring, and Automated Deployment.
 
 ---
 
-# 🛠 Tech Stack
+## ✨ Features
+
+- AWS EC2 Deployment
+- Docker & Docker Compose
+- GitHub Actions CI
+- Jenkins CD Pipeline
+- Terraform Infrastructure as Code
+- Ansible Configuration Management
+- Nginx Reverse Proxy
+- HTTPS with Custom Domain
+- Prometheus Monitoring
+- Grafana Dashboards
+- Node Exporter
+- cAdvisor
+- Automated Deployment
+
+---
+
+## 🛠 Tech Stack
 
 - AWS EC2
-- Ubuntu Linux
-- Git
-- GitHub
-- GitHub Actions
-- Jenkins
+- Ubuntu 24.04
 - Docker
 - Docker Compose
+- Jenkins
+- GitHub Actions
+- Terraform
+- Ansible
+- Nginx
+- Prometheus
+- Grafana
+- Node Exporter
+- cAdvisor
+- Git
 - PHP
 - MySQL
-- Apache
-- Prometheus
-- Grafana
-- Node Exporter
-- cAdvisor
 
 ---
 
-# 📂 Project Architecture
+## 📂 Project Structure
 
-Developer
-↓
-GitHub Repository
-↓
-GitHub Actions
-↓
-Jenkins CI/CD
-↓
-Docker Image Build
-↓
-Docker Compose Deployment
-↓
-AWS EC2 Server
-├── Planet Shopify Website
-├── Prometheus
-├── Grafana
-├── Node Exporter
-└── cAdvisor
+```
+Planet-shopify/
+├── ansible/
+├── terraform/
+├── terraform-ec2/
+├── diagrams/
+├── images/
+├── Dockerfile
+├── docker-compose.yml
+├── Jenkinsfile
+├── README.md
+```
 
 ---
 
-# ⚙️ CI/CD Workflow
+## 🏗 Architecture
 
-1. Developer pushes code to GitHub.
-2. GitHub Actions triggers the workflow.
-3. Jenkins pulls the latest code.
-4. Docker builds the application image.
-5. Docker Compose deploys the updated containers.
-6. Website is automatically updated on AWS EC2.
+(Architecture diagram will be added here.)
 
 ---
 
-# 📊 Monitoring
-
-The project includes complete monitoring using:
-
-- Prometheus
-- Grafana
-- Node Exporter
-- cAdvisor
-
-These tools monitor:
-
-- CPU Usage
-- Memory Usage
-- Disk Usage
-- Network Usage
-- Docker Containers
-- Server Health
-
----
-
-# 🐳 Docker Containers
-
-- Planet Shopify
-- Prometheus
-- Grafana
-- Node Exporter
-- cAdvisor
-
----
-
-# 📸 Screenshots
-
-Coming Soon
-
-- Website
-- Jenkins Pipeline
-- GitHub Actions
-- Prometheus
-- Grafana Dashboard
-- Docker Containers
-
----
-
-# 🚀 Features
-
-✅ Automated Deployment
-
-✅ Continuous Integration
-
-✅ Continuous Delivery
-
-✅ Infrastructure Monitoring
-
-✅ Docker Containerization
-
-✅ AWS Cloud Deployment
-
----
-
-# 📈 Future Improvements
-
-- Kubernetes Deployment
-- Terraform Infrastructure
-- Ansible Automation
-- Nginx Reverse Proxy
-- SSL with Let's Encrypt
-- Centralized Logging (ELK)
-
----
-
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Piyush Sharma**
 
+MCA | DevOps Engineer (Fresher)
 
-MCA Graduate | DevOps Engineer | AWS | Docker | Jenkins | Grafana | Prometheus
+GitHub:
+https://github.com/piyushsharma2205
