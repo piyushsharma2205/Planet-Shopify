@@ -15,22 +15,29 @@ $pass = $_POST['password'];
 $pass = mysqli_real_escape_string($con, $pass);
 $pass = md5($pass);
 
-$query = "SELECT * from users where email_id='$email'";
+// Check whether email already exists
+$query = "SELECT * FROM users WHERE email_id='$email'";
 $result = mysqli_query($con, $query);
-$num = mysqli_num_rows($result);
-if ($num != 0) {
+
+if (mysqli_num_rows($result) > 0) {
 
     $m = "Email Already Exists";
-    header('location: index.php?error=' . $m);
+    header("Location: index.php?error=" . urlencode($m));
+    exit();
 
 } else {
-    $quer = "INSERT INTO users(email_id,first_name,last_name,password) values('$email','$first','$last','$pass')";
-    mysqli_query($con, $quer);
 
-    echo "New record has id: " . mysqli_insert_id($con);
+    $query = "INSERT INTO users(email_id, first_name, last_name, password)
+              VALUES('$email', '$first', '$last', '$pass')";
+
+    mysqli_query($con, $query);
+
     $user_id = mysqli_insert_id($con);
+
     $_SESSION['email'] = $email;
     $_SESSION['user_id'] = $user_id;
-    header('location:products.php');
+
+    header("Location: products.php");
+    exit();
 }
 ?>

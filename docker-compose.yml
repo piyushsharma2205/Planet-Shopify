@@ -1,9 +1,26 @@
 version: '3.8'
 
 services:
+  mysql:
+    image: mysql:8.0
+    container_name: planet-shopify-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ecommerce
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
   planet-shopify:
     build: .
     container_name: planet-shopify
+    restart: unless-stopped
     ports:
       - "8080:80"
-    restart: unless-stopped
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:
