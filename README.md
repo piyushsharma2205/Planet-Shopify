@@ -166,6 +166,6 @@ Planet-Shopify/
 docker compose up -d
 ```
 
-Access the application:
+Access the My application:
 
 https://piyushdev.xyz
