@@ -6,9 +6,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 sh '''
-                docker build -t planet-shopify \
-                -f Planet-Shopify/Dockerfile \
-                Planet-Shopify
+                docker build -t planet-shopify -f Dockerfile .
                 '''
             }
         }
