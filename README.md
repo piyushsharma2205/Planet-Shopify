@@ -166,6 +166,8 @@ Planet-Shopify/
 docker compose up -d
 ```
 
+CI/CD Test
+
 Access the My Project application:
 
 https://piyushdev.xyz
